@@ -67,7 +67,7 @@ In order to connect to the instance, use
 bash awscracknip.sh -connect
 ```
 
-To not acccumulate unnessary costs you can keep it running but suspend the EC2 via
+To not accumulate unwanted costs you can keep it running but suspend the EC2 via
 ```
 bash awscracknip.sh -stop
 ```
