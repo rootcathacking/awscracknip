@@ -1,3 +1,4 @@
+```
 __          _______    _____ _____            _____ _  __  _   _ _____ _____
 /\ \        / / ____|  / ____|  __ \     /\   / ____| |/ / | \ | |_   _|  __ \
 /  \ \  /\  / / (___   | |    | |__) |   /  \ | |    | ' /  |  \| | | | | |__) |
@@ -16,7 +17,7 @@ _____ |___/_   ____ _______ _____       _______
 |  _  /| |  | | |  | | | | | |      / /\ \ | |
 | | \ \| |__| | |__| | | | | |____ / ____ \| |
 |_|  \_\\____/ \____/  |_|  \_____/_/    \_\_|
-
+```
 
 
 
@@ -53,13 +54,18 @@ is selected if none is given.
 bash awscracknip.sh -install KeyName
 
 The stack can be killed and the EC2Instance and its SecurityGroup deleted via
+```
 bash awscracknip.sh -kill
-
+```
 In order to connect to the instance, use
+```
 bash awscracknip.sh -connect
+```
 
 To not accumalte costs you can keep it running but suspend the EC2 via
+```
 bash awscracknip.sh -stop
+```
 and -start to wake it up again.
 
 -connect assumes the key to be in the same folder as the deployment script, you can either change this in the script or connect however else you like.
