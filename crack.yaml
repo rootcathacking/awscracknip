@@ -43,7 +43,6 @@ Resources:
           !Sub |
             #!/bin/bash
             cd home/ubuntu/
-            sudo apt-get update
             sudo apt-get update -yq
             sudo apt-get install -y linux-image-extra-virtual build-essential linux-headers-$(uname -r) p7zip-full
             sudo touch /etc/modprobe.d/blacklist-nouveau.conf
