@@ -53,7 +53,7 @@ The efs-utils is installed on the deployed instance so mounting can be done.
 Awscracknip installs everything with cloudformation. The default stack that gets deployed needs your SSH KeyName and the EC2 instance, which gets deployed. By default a g4dn.xlarge is selected if none is given. The output from aws cli is shown to make it easier to troubleshoot.
 
 ```
-bash awscracknip.sh -install KeyName
+bash awscracknip.sh -install KeyName EC2Instance
 ```
 While stack deployment is fast the scripts to make it ready to run hascat and install the drivers take a few minutes to finish.
 
