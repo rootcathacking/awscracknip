@@ -75,6 +75,8 @@ and -start to wake it up again.
 Depends on your used storage and your ec2 instance plus runtime. Can check it here
 https://instances.vantage.sh/
 
+for the default instance roughly 0,8$ or 0,75€
+
 
 the output of aws cli is intentionally shown to make it easier to troubleshoot
 while stack deployment is fast the scripts to make it ready to run hascat and the installation of the requisites take a while
