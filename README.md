@@ -49,10 +49,11 @@ You might want:
 The efs-utils is installed on the deployed instance.
 
 # How does it work
-Awscracknip installs everything with cloudformation. The default stack that gets deployed needs your SSH KeyName and the EC2-Instance, which gets deployed. By default an g3s.xlarge
-is selected if none is given.
-bash awscracknip.sh -install KeyName
+Awscracknip installs everything with cloudformation. The default stack that gets deployed needs your SSH KeyName and the EC2-Instance, which gets deployed. By default an g4dn.xlarge is selected if none is given.
 
+```
+bash awscracknip.sh -install KeyName
+```
 The stack can be killed and the EC2Instance and its SecurityGroup deleted via
 ```
 bash awscracknip.sh -kill
