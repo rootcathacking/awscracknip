@@ -49,7 +49,7 @@ You might want:
 
 The efs-utils is installed on the deployed instance so mounting can be done.
 
-# How does it work
+# How does it work?
 Awscracknip installs everything with cloudformation. The default stack that gets deployed needs your SSH KeyName and the EC2 instance, which gets deployed. By default a g4dn.xlarge is selected if none is given. The output from aws cli is shown to make it easier to troubleshoot.
 
 ```
@@ -62,7 +62,12 @@ The stack can be killed and the EC2 instance and its security group is deleted v
 ```
 bash awscracknip.sh -kill
 ```
-In order to connect to the instance, use
+Use -info to display stack status as well as data, like IP-Address for the EC2
+```
+bash awscracknip.sh -info
+```
+
+In order to connect to the instance you can use
 ```
 bash awscracknip.sh -connect
 ```
