@@ -84,6 +84,6 @@ and -start to wake it up again.
 Depends on your used storage and your EC2 instance plus runtime. A good place to check beforehand ist 
 https://instances.vantage.sh/
 
-For the default instance (g4dn.xlarge) and without storage costs, one can expect roughly 0,8\$ or 0,75\€ per running hour. With the p3 instances this can go up to 20-25\$ per hour. However these instances are very very powerfull. At this point this is basically pay2win. 
+For the default instance (g4dn.xlarge) and without storage costs, one can expect roughly 0,75€ per running hour. With the p3 instances this can go up to 20-25€ per hour. However these instances are very very powerfull. At this point this is basically pay2win. 
 
 
