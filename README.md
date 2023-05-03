@@ -28,7 +28,7 @@ Awscracknip deploys an EC2 instance with a security group, ready to connect and 
 
 
 # Why tho?
-There a already fancy aws based crackers out there, like e.g. https://github.com/c6fc/npk and other great ones.
+There are already fancy aws based crackers out there, like e.g. https://github.com/c6fc/npk and other great ones.
 They work and are very sophisticated, but I could never fit them in my daily workflow, due to high complexity or long setup times.
 
 This is why awscracknip is kept very basic intentionally so on the fly changes on the template or deployment can be made without the need to spend a day  understanding complex code.
