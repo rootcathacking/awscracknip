@@ -60,9 +60,9 @@ Resources:
             rm -f NVIDIA-Linux-x86_64-550.40.07.run
             git clone https://github.com/aws/efs-utils
             cd efs-utils/
-            ./build-deb.sh
+            sudo ./build-deb.sh
             sudo apt-get -y install ./build/amazon-efs-utils*deb
-            sudo apt-get -y install openssh libssl-dev
+            sudo apt-get -y install openssl libssl-dev
             cd ~
             git clone https://github.com/openwall/john.git
             cd john/src
