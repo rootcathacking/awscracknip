@@ -43,6 +43,7 @@ You need:
 * An AWS account with sufficent service quota to deploy EC2 instances
 * A keypair to connect via SSH
 * aws cli installed on your machine where awscracknip is deployed
+* aws default vpc set `aws ec2 create-default-vpc`
 
 You might want:
 * A EFS or EBS share where you store your wordlists
