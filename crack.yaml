@@ -27,22 +27,22 @@ Parameters:
     Default: 0.0.0.0/0
     AllowedPattern: (\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/(\d{1,2})
     ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
-  LatestAmiId:
-    Type:  'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-    Default: '/aws/service/canonical/ubuntu/server/focal/stable/current/amd64/hvm/ebs-gp2/ami-id'
+  #LatestAmiId:
+  #  Type:  'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
+  #  Default: '/aws/service/debian/release/bookworm/latest/amd64/'
 Resources:
   EC2Instance:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: !Ref 'InstanceType'
       SecurityGroups: [!Ref 'InstanceSecurityGroup']
-      KeyName: !Ref 'KeyName'
-      ImageId: !Ref 'LatestAmiId'
+      KeyName: !Ref 'KeyName'     
+      #ImageId: !Ref 'LatestAmiId'
+      ImageId: 'ami-04d481f6da046c1e2'
       UserData:
         Fn::Base64:
           !Sub |
             #!/bin/bash
-            cd home/ubuntu/
             sudo apt-get update -yq
             sudo apt-get install -y build-essential linux-headers-$(uname -r) p7zip-full git gcc make
             sudo touch /etc/modprobe.d/blacklist-nouveau.conf
